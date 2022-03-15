@@ -1,9 +1,16 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-    System.out.printf("alfa\t sin(alfa)\n");
-    for (int i = 0; i < 370; i+=10)
-        System.out.printf("%d\t%f\t\n", i, Math.sin(i/360.0*2*Math.PI));
+        int ii = 1;
+        System.out.printf("arg\t   log2(arg)\tsum(arg)\n");
+        for (int i = 1; i < 10; i++) {
+            System.out.printf("%d\t       %.0f\t       %d\t\n", i, Math.log(i) / Math.log(2), ii += i);
+        }
     }
 }
+
+
+
