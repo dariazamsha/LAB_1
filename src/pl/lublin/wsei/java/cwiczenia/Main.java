@@ -2,16 +2,9 @@ package pl.lublin.wsei.java.cwiczenia;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Ala");
-        System.out.print("ma");
-        System.out.print("kota");
-
-        System.out.println("\nAla");
-        System.out.println("ma");
-        System.out.println("kota");
-
-        System.out.print("Ala\n");
-        System.out.print("ma\n");
-        System.out.print("kota\n");
+        int a = 3;
+        double b = 4.21;
+        String c = "Hello";
+        System.out.printf("a = %d, b = %f, c = %s %n",a,b,c);
     }
 }
