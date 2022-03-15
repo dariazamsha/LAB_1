@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int ii = 1;
-        System.out.printf("arg\t   log2(arg)\tsum(arg)\n");
-        for (int i = 1; i < 10; i++) {
-            System.out.printf("%d\t       %.0f\t       %d\t\n", i, Math.log(i) / Math.log(2), ii += i);
-        }
+        Scanner input = new Scanner(System.in);
+        int num1, num2;
+        System.out.print("Podaj pierwszą liczbę: ");
+        num1 = input.nextInt();
+        System.out.print("Podaj drugą liczbę: ");
+        num2 = input.nextInt();
+        System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1+num2);
     }
 }
 
