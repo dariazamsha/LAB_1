@@ -1,18 +1,14 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import pl.lublin.wsei.java.cwiczenia.mylib.Account;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int num1 = 0, num2 = 0;
-        do {
-            System.out.print("Podaj liczbę, które mam dodać: ");
-            num1 = input.nextInt();
-            num2 = input.nextInt();
-            if ((num1 == 0) || (num2 == 0)) break;
-            System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
-        }while(true);
+        Account acc = new Account();
+        acc.name = "Daria Zamsha";
+        System.out.println(acc.name);
     }
 }
 
